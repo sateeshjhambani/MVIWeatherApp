@@ -1,7 +1,5 @@
 package com.sateeshjh.mviweatherapp.data.mappers
 
-import android.os.Build
-import androidx.annotation.RequiresApi
 import com.sateeshjh.mviweatherapp.data.remote.WeatherDTO
 import com.sateeshjh.mviweatherapp.data.remote.WeatherDataDTO
 import com.sateeshjh.mviweatherapp.domain.weather.WeatherData
@@ -15,7 +13,6 @@ private data class IndexedWeatherData(
     val data: WeatherData
 )
 
-@RequiresApi(Build.VERSION_CODES.O)
 fun WeatherDataDTO.toWeatherDataMap(): Map<Int, List<WeatherData>> {
 
     return time.mapIndexed { index, time ->
@@ -43,8 +40,7 @@ fun WeatherDataDTO.toWeatherDataMap(): Map<Int, List<WeatherData>> {
     }
 }
 
-@RequiresApi(Build.VERSION_CODES.O)
-fun WeatherDTO.toWeatherInfo(): WeatherInfo{
+fun WeatherDTO.toWeatherInfo(): WeatherInfo {
 
     val weatherDataMap = weatherData.toWeatherDataMap()
     val now = LocalDateTime.now()

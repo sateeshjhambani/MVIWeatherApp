@@ -15,4 +15,4 @@ A clean architecture weather app that shows you the daily weather forecast based
 
 • Dagger Hilt DI
 
-https://user-images.githubusercontent.com/60574717/215259057-2735219b-00e9-42de-a2f4-157a1479ca18.png
+![Screenshot_20230128_134519](https://user-images.githubusercontent.com/60574717/215259101-c1495d62-8e3e-4207-a36b-fa228b0b9d41.png)
